@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Оплата</title>
+    <link rel="stylesheet" href="/cart.html">
+</head>
+<body>
+    <div class="wrapper wrapper_black wrapper_header">
+        <div class="content">
+          <header class="page-header ">
+            <div class="page-header__logo name_header_text_head">
+              <div class="logo">
+                <a href="/cart.html" style="text-decoration: none;"> <p class="logo_text"><b>У Сказки</b> <span class="none_dis">— магазин для дома.</span></p></a>
+              </div>
+            </div>
+      
+            <ul class="social_list">
+              <li class="social_list_item"><img src="/img/svg/icon_VK.svg" alt="" class="social_img vk_icon"></li>
+              <li class="social_list_item"><img src="/img/svg/icon_Telegram.svg" alt="" class="social_img telega_icon"></li>
+              <li class="social_list_item"><img src="/img/svg/insta.svg" alt="" class="social_img insta_icon"></li>
+            </ul>
+      
+            <div  class="page-header__contact">
+      
+      
+              <div class="callback" id="header-btn">
+                
+                <button  class="callback__btn">
+
+                  <div class="svg_bg">
+                  <img src="/img/svg/tel.svg" alt="" class="tel_icon">
+                </div>
+                  <span class="callback__btn-text">Позвоните мне</span>
+                </button>
+               
+          
+                
+              </div>
+            </div>
+            <div  class="page-header__cart">
+              <div class="cart">
+               
+                <div class="cart__btn cart__btn_white cart__btn_not-active">
+                  <div class="cart__btn-inner-wrap">
+                    <a href="/oplata.html" style="text-decoration: none;">
+                    <button  class="callback__btn" style="width: 138px;"> 
+                      <div class="svg_bg" style="background-color: #4A5FFF;">
+                      <object type="image/svg+xml" data="/img/svg/bag.svg"  class="tel_icon tel_icon_bag_fill"></object>
+                    </div>
+                      <span class="callback__btn-text">Моя корзина</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    <div class="wrapper">
+        <div class="content">
+          <div class="cart-order">
+            <p class="cart-order__title">Оформление заказа.</p>
+            <div class="cart-order__wrap-1">
+              <div class="cart-order__wrap-2">
+                <div class="cart-order__frame">
+                  <div class="cart-order__block">
+                    <p class="cart-order__title-2"><img src="/img/svg/icon_important.svg" alt="" class="svg_cart">Шаг 1. Укажите свои контактные данные:</p>
+                    <div class="cart-order__wrap-5">
+                      <div class="cart-order__input-wrap cart-order__input-wrap_w50p  cart-order__input-wrap_side-marg-5">
+                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required id="testName">
+                        <p class="cart-order__placeholder">Имя</p>
+                      </div>
+                      <div class="cart-order__input-wrap cart-order__input-wrap_w50p  cart-order__input-wrap_side-marg-5">
+                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required>
+                        <p class="cart-order__placeholder">Фамилия</p>
+                      </div>
+                    </div>
+                    <div class="cart-order__input-wrap">
+                      <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required>
+                      <p class="cart-order__placeholder">Номер мобильного телефона</p>
+                    </div>
+                    <div class="cart-order__input-wrap">
+                      <input type="email" minlength="1" required name="userName"  value="" class="cart-order__input"  required>
+                      <p class="cart-order__placeholder">Действующая электронная почта</p>
+                    </div>
+                  </div>
+                  <div class="cart-order__block">
+                    <p class="cart-order__title-2"><img src="/img/svg/safe.svg" alt="" class="svg_cart">Шаг 2. Введите свой адрес:</p>
+                      <div class="cart-order__input-wrap">
+                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required>
+                        <p class="cart-order__placeholder">Введите город, затем выберите его из списка</p>
+                      </div>
+                    <div class="cart-order__wrap-5">
+                      <div class="cart-order__input-wrap cart-order__input-wrap_side-marg-5 cart-order__input-wrap_street">
+                        <input type="text" minlength="1" required="true" name="userName"  value="" class="cart-order__input" required>
+                        <p class="cart-order__placeholder">Улица</p>
+                      </div>
+                      <div class="cart-order__input-wrap cart-order__input-wrap_side-marg-5 cart-order__input-wrap_build">
+                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required="">
+                        <p class="cart-order__placeholder">Дом</p>
+                      </div>
+                      <div class="cart-order__input-wrap cart-order__input-wrap_side-marg-5 cart-order__input-wrap_flat">
+                        <input type="text" minlength="1" name="userName"  value="" class="cart-order__input">
+                        <p class="cart-order__placeholder">Квартира</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-order__block cart-order__block_noborder">
+                    <p class="cart-order__title-2"><img src="/img/svg/safe.svg" alt="" class="svg_cart">Шаг 3. Выберите удобный вариант доставки:</p>
+                    <div class="cart-order__input-wrap">
+                      <select name="date-added" class="cart-order__select"  required>
+                        <option value="" id="empty-select"></option>
+                        <option value="Курьер">Курьер</option>
+                        <option value="Самовывоз">Самовывоз</option>
+                        <option value="Почта России">Почта России</option>
+                        <option value="СДЭК">СДЭК</option>
+                      </select>
+                      <p class="cart-order__placeholder">Выбрать</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-order__frame cart-order__frame_no-bg" id="order-step-5">
+                  <div class="cart-order__block cart-order__block_noborder cart-order__block_pb0">
+                    <div class="cart-order__wrap-4">
+                      <p class="cart-order__title-2 cart-order__title-2_mobile-hidden"><img src="/img/svg/safe.svg" alt="" class="svg_cart">Шаг 4. Оплатите заказ:</p>
+                      <p class="cart-order__title-2 cart-order__title-2_mobile-show">Шаг 5. Оплатите заказ:</p>
+                      <div><img src="img/cart-payments.png" width="800" height="56" alt="" class="cart-order__payments"></div>
+                    </div>
+                    <button class="cart-order__btn">Купить онлайн</button>
+                  </div>
+                </div>
+                <div class="cart-order__garantiya"><div class="checkbox_box" style="
+                    align-items: center; 
+                   display: flex;
+                   margin-left: 45px;
+                   ">
+                   <label class="check" >
+                    <input id="checkbox_order" type="checkbox"  required > Согласен на обработку персональных данных
+                  </label>
+                  </div></div>
+              </div>
+              <div class="cart-order__wrap-3">
+                <p class="cart-order__title cart-order__title_check-order">Шаг 4. Проверьте ваш заказ</p>
+                <div class="cart-order__frame cart-order__frame_border">
+                  <div class="cart-product">
+                    <div class="cart-product__wrap-1">
+                      <div class="cart-product__wrap-1-1">
+                        <img src="img/Rectangle.jpg" width="500" height="500" alt="" class="cart-product__image">
+                      </div>
+                      <div class="cart-product__wrap-1-2">
+                        <p class="cart-product__title">Шапка и шарф комплект</p>
+                      </div>
+                    </div>
+                    <div class="cart-product__wrap-2">
+                      <div class="cart-product__wrap-2-1">
+                        <div class="cart-product__input-wrap quantity">
+                          <input type="number" min="1" max="100" step="1" value="1"  class="quantity__cart">
+                        </div>
+                      </div>
+                      <div class="cart-product__wrap-2-2">
+                        <p class="cart-product__price">7 990 ₽</p>
+                        <p class="cart-product__delete">Удалить</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart-product">
+                    <div class="cart-product__wrap-1">
+                      <div class="cart-product__wrap-1-1">
+                        <img src="img/Rectangle.jpg" width="500" height="500" alt="" class="cart-product__image">
+                      </div>
+                      <div class="cart-product__wrap-1-2">
+                        <p class="cart-product__title">Шапка и шарф комплект</p>
+                      </div>
+                    </div>
+                    <div class="cart-product__wrap-2">
+                      <div class="cart-product__wrap-2-1">
+                        <div class="cart-product__input-wrap quantity">
+                          <input type="number" min="1" max="100" step="1" value="1"  class="quantity__cart">
+                        </div>
+                      </div>
+                      <div class="cart-product__wrap-2-2">
+                        <p class="cart-product__price">990 руб.</p>
+                        <p class="cart-product__delete">Удалить</p>
+                      </div>
+                    </div>
+                  </div>
+                  <table class="cart-stats">
+                    <tr>
+                      <td class="cart-stats__left">Ваш заказ:</td>
+                      <td class="cart-stats__right">12970 руб.</td>
+                    </tr>
+                    <tr>
+                      <td class="cart-stats__left">Доставка:</td>
+                      <td class="cart-stats__right">490 руб.</td>
+                    </tr>
+                    <tr>
+                      <td class="cart-stats__left cart-stats__left_pb25">У вас есть промокод? <a href="" class="cart-stats__link" id="promo-link">Введите его здесь <span class="cart-stats__arrow-down">›</span></a></td>
+                      <td></td>
+                    </tr>
+                    <tr class="cart-stats__promo-row">
+                      <td class="cart-stats__left cart-stats__left_pb25 cart-stats__left_pt0">
+                        <div class="cart-order__input-wrap">
+                          <input type="text" minlength="1" name="user-promo"  value="" class="cart-order__input" id="promo-input">
+                          <p class="cart-order__placeholder">Промокод</p>
+                          <button class="cart-stats__promo-apply">Применить</button>
+                        </div>
+                        <p class="cart-stats__promo-text">Ваш промокод: -15% на сумму заказа.<br>Промокод действителен: до 22.02.2020, 18:00</p>
+                      </td>
+                      <td class="cart-stats__right cart-stats__right_pt0">
+                        <div class="cart-order__input-wrap">
+                          <button class="cart-stats__promo-cancel">Отменить</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cart-stats__total cart-stats__left">Итого:</td>
+                      <td class="cart-stats__total cart-stats__right">13460 руб.</td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="cart-order__title-3">Добавить к заказу:</p>
+      
+                <div class="cart-options__item cart-options__item_addons">
+                  <div class="cart-options__item-box-3">
+                    <div class="cart-options__item-image-wrap">
+                      <div><img src="img/cart-addons-1.jpg"  alt=""  width="120"  height="120" class="cart-options__item-image"></div>
+                    </div>
+                    <div class="cart-options__item-box-1">
+                      <p class="cart-options__item-title-2">Название товара 1 <br><span class="nobr">Цвет: цвет товара 1</span></p>
+                      <p class="cart-options__item-price"><span class="cart-options__item-price-old">2 000 ₽</span> 1 490 ₽ </p>
+                    </div>
+                  </div>
+                  <div class="cart-options__item-box-2">
+                    <button  class="cart-options__item-btn cart-options__item-btn_king cart-options__item-btn_visible">Добавить</button>
+                  </div>
+                </div>
+      
+                <div class="cart-options__item cart-options__item_addons">
+                  <div class="cart-options__item-box-3">
+                    <div class="cart-options__item-image-wrap">
+                      <div><img src="img/cart-addons-3.jpg"  alt=""  width="120"  height="120" class="cart-options__item-image"></div>
+                    </div>
+                    <div class="cart-options__item-box-1">
+                      <p class="cart-options__item-title-2">Название товара 2<br> Цвет: цвет товара 2</p>
+                      <p class="cart-options__item-price"><span class="cart-options__item-price-old">2 500 ₽</span> 1 990 ₽ </p>
+                    </div>
+                  </div>
+                  <div class="cart-options__item-box-2">
+                    <button  class="cart-options__item-btn cart-options__item-btn_king cart-options__item-btn_visible">Добавить</button>
+                  </div>
+                </div>
+                <div class="cart-options__item cart-options__item_addons">
+                    <div class="cart-options__item-box-3">
+                      <div class="cart-options__item-image-wrap">
+                        <div><img src="img/cart-addons-1.jpg"  alt=""  width="120"  height="120" class="cart-options__item-image"></div>
+                      </div>
+                      <div class="cart-options__item-box-1">
+                        <p class="cart-options__item-title-2">Название товара 3 <br><span class="nobr">Цвет: цвет товара 3</span></p>
+                        <p class="cart-options__item-price"> 2 500 ₽ </p>
+                      </div>
+                    </div>
+                    <div class="cart-options__item-box-2">
+                      <button  class="cart-options__item-btn cart-options__item-btn_king cart-options__item-btn_visible">Добавить</button>
+                    </div>
+                  </div>
+      
+              </div>
+      
+            </div>
+      
+      
+      </div>
+      
+      
+      
+          </div>
+        </div>
+
+      <style>
+
+  
+  
+  .accordion {
+    border-top:1px#E5E8ED solid;
+    padding-left: 0;
+    cursor: pointer;
+    
+    width: 100%;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: left;
+    outline: none;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    transition: 0.4s;
+     background: none;
+     font-family: Proxima Nova;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+
+/* Базовые цвета/Чёрный (100%) */
+
+color: #000000;
+  }
+  
+  
+  
+  .accordion:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url("/img/svg/plus.svg");
+    background-repeat: no-repeat;
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  #accordion_main_but {
+   
+    color: #444;
+    cursor: pointer;
+   border: none;
+    width: 100%;
+    
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  
+  }
+  
+  #accordion_main{
+  display: none;
+  }
+  
+  
+  #accordion_main_but {
+    padding-left: 0;
+   font-weight: 600;
+   background: none;
+   font-family: Proxima Nova;
+   margin-top: 40px;
+   margin-bottom: 40px;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+/* identical to box height */
+
+
+
+/* Базовые цвета/Чёрный (100%) */
+
+color: #000000;
+  }
+  
+  
+  
+  #accordion_main_but:after {
+    margin-top: 10px;
+    content: '';
+     min-width: 20px;
+    min-height: 20px;
+    background-image: url("/img/svg/down.svg");
+    background-repeat: no-repeat;
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  
+  
+  .active:after {
+    content: "";
+  width:20px;
+    height: 20px;
+    background-image: url("/img/svg/krest.svg") !important;
+    color: black;
+  }
+  
+  .active2:after {
+    content: "";
+  width:20px;
+    height: 20px;
+    background-image: url("/img/svg/up.svg") !important;
+    color: black;
+  }
+  
+  .accordion_panel {
+    font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+
+/* Базовые цвета/Чёрный (100%) */
+
+color: #000000;
+   margin-bottom: 20px;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .accordion_main{
+    display: none;
+    opacity: 0;
+   
+  }
+  
+  .show_acc{
+    display: block !important;
+    opacity: 1;
+    animation: show_acc 0.3s;
+  }
+  
+  
+  
+  
+  @keyframes show_acc{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .text_dec{
+    font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+
+/* Базовые цвета/Чёрный (100%) */
+
+color: #000000;
+  }
+  
+  
+  
+  
+  
+  </style>
+  </head>
+  <body>
+  <div class="wrapper">
+    <div class="content">
+  <button id="accordion_main_but" onclick="MainAcc()">Часто задаваемые вопросы</button>
+  <div id="accordion_main">
+  
+    <button class="accordion">Как происходит оплата?</button>
+    <div class="accordion_panel">
+      <p class="text_dec">Оплатить покупки можно на сайте картой, через онлайн-банк Тинькофф. После оплаты вам придёт чек от банка и магазина.</p>
+    </div>
+  
+    <button class="accordion">Когда я получу свои покупки?</button>
+    <div class="accordion_panel">
+      <p class="text_dec">Оплатить покупки можно на сайте картой, через онлайн-банк Тинькофф. После оплаты вам придёт чек от банка и магазина.</p>
+    </div>
+  
+    <button class="accordion">Сколько стоит доставка?</button>
+    <div class="accordion_panel">
+      <p class="text_dec">Оплатить покупки можно на сайте картой, через онлайн-банк Тинькофф. После оплаты вам придёт чек от банка и магазина.</p>
+    </div>
+  
+  </div>
+</div>
+</div>
+<script>
+  var acc_st = 0;
+  function MainAcc(){
+      if(acc_st==0){
+          acc_st = 1;
+        
+          $("#accordion_main").addClass("show_acc");
+          $("#accordion_main_but").addClass("active2");
+  
+  
+  
+      }
+      else{
+          acc_st = 0;
+          $("#accordion_main").removeClass("show_acc");
+          $("#accordion_main_but").removeClass("active2");
+      }
+        
+  }
+  
+  var acc = document.getElementsByClassName("accordion");
+  var ii;
+  
+  for (ii = 0; ii < acc.length; ii++) {
+    acc[ii].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+      
+      
+      
+      
+      
+      
+      <div class="wrapper wrapper_black" style="border-top: 1px #E5E8ED solid;" >
+        <div class="content">
+          <footer class="page-footer">
+            <div class="footer_box_top">
+            <p class="footer_head_name"><span style="font-weight:bold; " >У Сказки</span> — магазин для дома.</p>
+            <ul class="social_list" style="margin-left: auto;margin-bottom: 12px;" >
+              <li class="social_list_item"><img src="/img/svg/icon_VK.svg" alt="" class="social_img vk_icon"></li>
+              <li class="social_list_item"><img src="/img/svg/icon_Telegram.svg" alt="" class="social_img telega_icon"></li>
+              <li class="social_list_item"><img src="/img/svg/insta.svg" alt="" class="social_img insta_icon"></li>
+            </ul>
+            </div>
+            <div class="border"></div>
+            <div class="footer_box_bot">
+            <p class="bot_head_name">© 1995-2021. Все права защищены.</p>
+            <a href="" class="ref_bot">Политики конфенциальности</a>
+            <a href="" class="ref_bot" style="width: 195px; margin-left:20px; ">Пользовательское соглашение</a>
+            <a href="/contact.html" class="ref_bot" style="border: 0; margin-left:20px; width: 50px;">Контакты</a>
+            <p style="margin-left: auto; 
+            font-family: Proxima Nova;
+            font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+color: #000000;
+">Разработка сайта: <a href=""> lab-mg.com</a></p>
+            </div>
+          </footer>
+        </div>
+      </div>
+</body>
+</html>
