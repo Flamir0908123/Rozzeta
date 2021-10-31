@@ -101,13 +101,11 @@
     <div class="cart-options">
       <div class="cart-options__wrap-1">
         <p class="cart-options__title-mobile">Купить розу в колбе</p>
-        <img src="img/bg-zag.jpg" width="540" height="460" alt="" class="cart-options__photo">
-        <img src="img/bg-zag.jpg" width="540" height="460" alt="" class="cart-options__photo cart-options__photo_hidden" data-rose="mini">
-        <img src="img/bg-zag.jpg" width="540" height="460" alt="" class="cart-options__photo cart-options__photo_hidden" data-rose="king">
+        <img src="img/zagl/default/Standart/default.jpg" width="540" height="460" alt="" class="cart-options__photo">
+        
        
         <p class="cart-options__rose-type cart-options__rose-type_active">Выберите Тип лежанки из Шага 1</p>
-        <p class="cart-options__rose-type" data-rose="mini">Круглая</p>
-        <p class="cart-options__rose-type" data-rose="premium">Прямоугольная</p>
+        
         
       </div>
 
@@ -115,31 +113,37 @@
       <div class="cart-options__wrap-2">
         <p class="cart-options__title">Купить Лежанку для животных.</p>
         <div class="cart-options__wrap-3">
-          <p class="cart-options__choose-text"><img src="/img/svg/green.svg" alt="" class="svg_cart"> Шаг 1: Выбор типа Лежанки:</p>
+          <p class="cart-options__choose-text"><img src="img/svg/icon_important.svg" alt="" class="svg_cart type_svg"> Шаг 1: Выбор типа Лежанки:</p>
           <!--
           <a href=""  class="cart-options__compare-sizes">Сравнить размеры</a>
           -->
         </div>
         <div class="cart-item_type">
-        <div class="cart-options__item cart-options__item_type" data-rose="mini">
+     
+        <div class="cart-options__item cart-options__item_type lezh_types type_1" onclick="Type(this);">
           <div class="cart-options__item-box-1" style="margin-left: auto;">
-            <p class="cart-options__item-title">Круглая</p>
+            <p class="cart-options__item-title " id="type_1" style="">Круглая</p>
 
-          </div>
+        
          
         </div>
-        <div class="cart-options__item cart-options__item_type" data-rose="premium">
+
+        </div>
+       
+
+        <div class="cart-options__item cart-options__item_type lezh_types type_2"  onclick="Type(this);">
           <div class="cart-options__item-box-1" style="margin-left: auto;">
-            <p class="cart-options__item-title">Прямоугольная</p>
+            <p class="cart-options__item-title lezh_types" >Прямоугольная</p>
             
           </div>
         </div>
         </div>
-        <p class="cart-options__choose-text"><img src="/img/svg/icon_important.svg" alt="" class="svg_cart"> Шаг 2: Выберите размер:</p>
+        <p class="cart-options__choose-text"><img src="img/svg/safe.svg" alt="" class="size_svg svg_cart"> Шаг 2: Выберите размер:</p>
+        <div class="blur_step2 cart_blur">
         <div class="scale_box">
           <ul class="scale_list">
             <li class="scale_item">
-              <div class="scale_box_item">
+              <div class="scale_box_item lezh_sizes size_1" style="cursor: pointer;" onclick="Size(this);">
                 <p class="scale_head_item">Диаметр: 60 см</p>
                 <p class="scale_text_item"><span class="chena">от 1 205 ₽
 </span> <span class="sale">  2 190 ₽</span> <span class="sale_dis" >                 
@@ -147,7 +151,7 @@
               </div>
             </li>
             <li class="scale_item">
-              <div class="scale_box_item">
+              <div class="scale_box_item lezh_sizes size_2" style="cursor: pointer;" onclick="Size(this);">
                 <p class="scale_head_item">Диаметр: 80 см</p>
                 <p class="scale_text_item"><span class="chena">1 814 ₽
                   
@@ -155,14 +159,14 @@
               </div>
             </li>
             <li class="scale_item">
-              <div class="scale_box_item" style="margin-bottom:0px ;">
+              <div class="scale_box_item lezh_sizes size_3"  style="margin-bottom:0px ; cursor: pointer;" onclick="Size(this);">
                 <p class="scale_head_item">Диаметр: 100 см</p>
                 <p class="scale_text_item"><span class="chena">от 2 779 ₽
                  
                   </span> <span class="sale">  4 790 ₽</span> <span class="sale_dis" style="background: #4A5FFF;" >-42%</span></p>
               </div>
               <li class="scale_item">
-                <div class="scale_box_item" style="margin-bottom:0px ;">
+                <div class="scale_box_item lezh_sizes size_4"  style="margin-bottom:0px ; cursor: pointer;" onclick="Size(this);">
                   <p class="scale_head_item">120 х 100 см</p>
                   <p class="scale_text_item"><span class="chena">от 3 534 ₽
                     
@@ -170,10 +174,152 @@
                 </div>
               </li>
         </div>
+      </div>
         
+          <div class="color_popup_overlay">
+              <div class="color_popup">
+                  <img src="img/svg/white_krest.svg" class="color_popup_close" onclick="HideColorPopup();">
+
+                  <div class="color_popup_content">
+                  <div class="head_modal">
+                    <p class="head_modal_text">Выбор дизайна</p>
+                  </div>
+                  <div class="modal_flex">
+<div class="box_img">
+  <img src="" alt="" class="img_modal">
+</div>
+<div class="box_img_bg">
+<p class="box_img_text">Весёлый банан</p>
+</div>
+<button class="box_color__btn">
+<p class="box_color_btn_text">Добавить в корзину</p>
+</button>
+<div class="box_list">
+  <ul class="list_item_modal">
+    <li class="item_modal">
+      <img src="" alt="" class="item_img">
+      <p class="item_head">Экрю</p>
+      <p class="item_text"> <span style="font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
         
-          <p class="cart-options__choose-text"><img src="/img/svg/safe.svg" alt="" class="svg_cart">Шаг 3: Выбор цвета.</p>
-          <div class="cart-options__item cart-options__item_colors cart-options__item_marg-top-30 cart-options__item_active">
+        text-decoration-line: line-through;
+        
+        /* Базовые цвета/Чёрный (100%) */
+        
+        color: #000000;
+        
+        opacity: 0.5;"> 8 990 ₽</span>
+        7 990 ₽</p>
+    </li>
+    <li class="item_modal">
+      <img src="" alt="" class="item_img">
+      <p class="item_head">Экрю</p>
+      <p class="item_text"> <span style="font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        
+        text-decoration-line: line-through;
+        
+        /* Базовые цвета/Чёрный (100%) */
+        
+        color: #000000;
+        
+        opacity: 0.5;"> 8 990 ₽</span>
+        7 990 ₽</p>
+    </li>
+    <li class="item_modal">
+      <img src="" alt="" class="item_img">
+      <p class="item_head">Экрю</p>
+      <p class="item_text"> <span style="font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        
+        text-decoration-line: line-through;
+        
+        /* Базовые цвета/Чёрный (100%) */
+        
+        color: #000000;
+        
+        opacity: 0.5;"> 8 990 ₽</span>
+        7 990 ₽</p>
+    </li>
+    <li class="item_modal">
+      <img src="" alt="" class="item_img">
+      <p class="item_head">Экрю</p>
+      <p class="item_text"> <span style="font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        
+        text-decoration-line: line-through;
+        
+        /* Базовые цвета/Чёрный (100%) */
+        
+        color: #000000;
+        
+        opacity: 0.5;"> 8 990 ₽</span>
+        7 990 ₽</p>
+    </li>
+    <li class="item_modal">
+      <img src="" alt="" class="item_img">
+      <p class="item_head">Экрю</p>
+      <p class="item_text"> <span style="font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        
+        text-decoration-line: line-through;
+        
+        /* Базовые цвета/Чёрный (100%) */
+        
+        color: #000000;
+        
+        opacity: 0.5;"> 8 990 ₽</span>
+        7 990 ₽</p>
+    </li>
+    <li class="item_modal">
+      <img src="" alt="" class="item_img">
+      <p class="item_head">Экрю</p>
+      <p class="item_text"> <span style="font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height, or 133% */
+        
+        text-decoration-line: line-through;
+        
+        /* Базовые цвета/Чёрный (100%) */
+        
+        color: #000000;
+        
+        opacity: 0.5;"> 8 990 ₽</span>
+        7 990 ₽</p>
+    </li>
+  </ul>
+</div>
+</div>
+                  </div>
+
+              </div>
+          </div>
+          <p class="cart-options__choose-text"><img src="img/svg/safe.svg" alt="" class="color_svg svg_cart ">Шаг 3: Выбор цвета.</p>
+          <div class="blur_step3 cart_blur">
+          <div class="cart-options__item cart-options__item_colors cart-options__item_marg-top-30 cart-options__item_active " onclick="ShowColorPopup();">
             <div class="cart-options__item-box-1">
               <p class="cart-options__item-title cart-options__item-title_colors" data-color="">Доступно 12 расцветок.</p>
               <p class="cart-options__item-desc cart-options__item-desc_colors">Доступно 12 расцветок роз</p>
@@ -183,11 +329,23 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
       
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  function ShowColorPopup(){
+    $(".color_popup_overlay").addClass("color_popup_show");
+  }
+  function HideColorPopup(){
+    $(".color_popup_overlay").removeClass("color_popup_show");
+  }
+
+
+</script>
 
 
 
@@ -543,8 +701,8 @@ color: #000000;
       <div class="footer_box_bot">
       <p class="bot_head_name">© 1995-2021. Все права защищены.</p>
       <div class="box_text_footer">
-      <a href="" class="ref_bot">Политики конфенциальности</a>
-      <a href="" class="ref_bot" style="width: 195px; margin-left:20px;">Пользовательское соглашение</a>
+      <a href="/privicy.html" class="ref_bot">Политики конфенциальности</a>
+      <a href="/agreement.html" class="ref_bot" style="width: 195px; margin-left:20px;">Пользовательское соглашение</a>
       <a href="/contact.html" class="ref_bot" style="border: 0; margin-left:20px; width: 50px;">Контакты</a>
     </div>
       <p style="margin-left: auto; 
@@ -554,7 +712,19 @@ font-weight: normal;
 font-size: 12px;
 line-height: 18px;
 color: #000000;
-">Разработка сайта: <a href=""> lab-mg.com</a></p>
+">Разработка сайта: <a href="https://lab-mg.com/" style="font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+text-decoration-line: underline;
+
+/* Кнопки и Ссылки/Глубокий синий */
+
+color: #4A5FFF;
+"> lab-mg.com</a></p>
       </div>
     </footer>
   </div>
@@ -641,7 +811,7 @@ color: #000000;
     <div class="colors-roznica__inner-2">
       <div class="colors-roznica__inner-4">
         <div>
-          <img src="img/Rectangle.jpg width="500" height="500" alt="" class="colors-roznica__photo">
+          <img src="img/Rectangle.jpg" width="500" height="500" alt="" class="colors-roznica__photo">
         </div>
         <div class="colors-roznica__inner-5">
           <p class="colors-roznica__photo-title"><span class="colors-roznica__photo-title-color">Весёлый</span>  банан</p>
