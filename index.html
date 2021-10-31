@@ -186,7 +186,7 @@
                   </div>
                   <div class="modal_flex">
 <div class="box_img">
-  <img src="" alt="" class="img_modal">
+  <img src="" alt="" class="img_modal" id="color_popup_img">
 </div>
 <div class="box_img_bg">
 <p class="box_img_text">Весёлый банан</p>
@@ -194,10 +194,11 @@
 <button class="box_color__btn">
 <p class="box_color_btn_text">Добавить в корзину</p>
 </button>
+
 <div class="box_list">
   <ul class="list_item_modal">
     <li class="item_modal">
-      <img src="" alt="" class="item_img">
+      <img src="https://via.placeholder.com/500/CDB891/000?Text=Down.com" alt="" class="item_img" onclick="$('.box_img_text').text('Экрю');$('#color_popup_img').attr('src', $(this).attr('src')); $('.item_img').removeClass('color_popup_selected'); $(this).addClass('color_popup_selected');">
       <p class="item_head">Экрю</p>
       <p class="item_text"> <span style="font-family: Proxima Nova;
         font-style: normal;
@@ -216,8 +217,8 @@
         7 990 ₽</p>
     </li>
     <li class="item_modal">
-      <img src="" alt="" class="item_img">
-      <p class="item_head">Экрю</p>
+      <img src="https://via.placeholder.com/500/FFFFFF/0000?Text=Down.com" alt="" class="item_img" onclick="$('.box_img_text').text('Белый');$('#color_popup_img').attr('src', $(this).attr('src')); $('.item_img').removeClass('color_popup_selected'); $(this).addClass('color_popup_selected');">
+      <p class="item_head">Белый</p>
       <p class="item_text"> <span style="font-family: Proxima Nova;
         font-style: normal;
         font-weight: normal;
@@ -235,8 +236,8 @@
         7 990 ₽</p>
     </li>
     <li class="item_modal">
-      <img src="" alt="" class="item_img">
-      <p class="item_head">Экрю</p>
+      <img src="https://via.placeholder.com/500/fadadd/000?Text=Down.com" alt="" class="item_img" onclick="$('.box_img_text').text('Пудра');$('#color_popup_img').attr('src', $(this).attr('src')); $('.item_img').removeClass('color_popup_selected'); $(this).addClass('color_popup_selected');">
+      <p class="item_head">Пудра</p>
       <p class="item_text"> <span style="font-family: Proxima Nova;
         font-style: normal;
         font-weight: normal;
@@ -254,8 +255,8 @@
         7 990 ₽</p>
     </li>
     <li class="item_modal">
-      <img src="" alt="" class="item_img">
-      <p class="item_head">Экрю</p>
+      <img src="https://via.placeholder.com/500/c4c4bc/0000?Text=Down.com" alt="" class="item_img" onclick="$('.box_img_text').text('Дымчатый');$('#color_popup_img').attr('src', $(this).attr('src')); $('.item_img').removeClass('color_popup_selected'); $(this).addClass('color_popup_selected');">
+      <p class="item_head">Дымчатый</p>
       <p class="item_text"> <span style="font-family: Proxima Nova;
         font-style: normal;
         font-weight: normal;
@@ -273,8 +274,8 @@
         7 990 ₽</p>
     </li>
     <li class="item_modal">
-      <img src="" alt="" class="item_img">
-      <p class="item_head">Экрю</p>
+      <img src="https://via.placeholder.com/500/858585/000?Text=Down.com" alt="" class="item_img" onclick="$('.box_img_text').text('Серый');$('#color_popup_img').attr('src', $(this).attr('src')); $('.item_img').removeClass('color_popup_selected'); $(this).addClass('color_popup_selected');">
+      <p class="item_head">Серый</p>
       <p class="item_text"> <span style="font-family: Proxima Nova;
         font-style: normal;
         font-weight: normal;
@@ -292,8 +293,8 @@
         7 990 ₽</p>
     </li>
     <li class="item_modal">
-      <img src="" alt="" class="item_img">
-      <p class="item_head">Экрю</p>
+      <img src="https://via.placeholder.com/500/b38c61/000?Text=Down.com" alt="" class="item_img" onclick="$('.box_img_text').text('Серо-бежевый');$('#color_popup_img').attr('src', $(this).attr('src')); $('.item_img').removeClass('color_popup_selected'); $(this).addClass('color_popup_selected');">
+      <p class="item_head">Серо-бежевый</p>
       <p class="item_text"> <span style="font-family: Proxima Nova;
         font-style: normal;
         font-weight: normal;
@@ -312,7 +313,16 @@
     </li>
   </ul>
 </div>
+<div class="war_modal">
+  <div class="flex_war">
+  <img src="/img/svg/icon_important.svg" alt="">
+  <p class="text_red">Ошибка:</p>
+  </div>
+  <p class="text_war"> <span style="text-decoration-line: underline;"> Выберите дизайн товара</span>, затем нажмите добавить в корзину.</p>
+
 </div>
+</div>
+
                   </div>
 
               </div>

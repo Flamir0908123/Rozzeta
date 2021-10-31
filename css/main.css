@@ -4053,6 +4053,49 @@ margin-bottom: 89px;
   cursor: pointer;
 }
 
+.color_popup_selected{
+  border: 2px solid #40CD0F !important;
+}
+.war_modal{
+  position: absolute;
+  bottom: 25px;
+  width: 230px;
+  left: 30px;
+ 
+}
+.flex_war{
+  display: flex;
+  align-items: center;
+}
+.text_red{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 18px;
+/* identical to box height, or 112% */
+
+
+/* icons/red */
+
+color: #FF5757;
+margin-left: 6px;
+}
+.text_war{
+  font-family: Proxima Nova;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+
+
+
+color: #000000;
+
+}
+
+
 /*ПОПАППППППП ЭНД*/
 .head_modal_text{
   font-family: Proxima Nova;
