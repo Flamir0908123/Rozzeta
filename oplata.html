@@ -225,21 +225,26 @@
                       <td class="cart-stats__right">490 руб.</td>
                     </tr>
                     <tr>
-                      <td class="cart-stats__left cart-stats__left_pb25">У вас есть промокод? <a href="" class="cart-stats__link" id="promo-link">Введите его здесь <span class="cart-stats__arrow-down">›</span></a></td>
+                      <td class="cart-stats__left cart-stats__left_pb25">У вас есть промокод? <a href="#" class="cart-stats__link" id="promo-link" onclick="$('.cart-stats__promo-row').attr('style', 'display: block')">Введите его здесь <span class="cart-stats__arrow-down">›</span></a></td>
                       <td></td>
                     </tr>
                     <tr class="cart-stats__promo-row">
                       <td class="cart-stats__left cart-stats__left_pb25 cart-stats__left_pt0">
                         <div class="cart-order__input-wrap">
-                          <input type="text" minlength="1" name="user-promo"  value="" class="cart-order__input" id="promo-input">
+                          <input type="text" minlength="1" name="user-promo"  value="" class="cart-order__input" id="promo-input" oninput="if(this.value){
+                           $('.cart-stats__promo-apply').attr('style', 'color: #1a0db3');
+                          }
+                          else{
+                              $('.cart-stats__promo-apply').removeAttr('style');
+                          }">
                           <p class="cart-order__placeholder">Промокод</p>
                           <button class="cart-stats__promo-apply">Применить</button>
                         </div>
-                        <p class="cart-stats__promo-text">Ваш промокод: -15% на сумму заказа.<br>Промокод действителен: до 22.02.2020, 18:00</p>
+                        <p class="cart-stats__promo-text"><b>Ваш промокод:</b> -15% на всю сумму заказа.<br><b>Действителен до:</b> 22.02.2022, 18:00</p>
                       </td>
                       <td class="cart-stats__right cart-stats__right_pt0">
                         <div class="cart-order__input-wrap">
-                          <button class="cart-stats__promo-cancel">Отменить</button>
+                          <button class="cart-stats__promo-cancel" onclick="$('.cart-stats__promo-row').removeAttr('style')">Отменить</button>
                         </div>
                       </td>
                     </tr>
@@ -489,7 +494,7 @@ color: #000000;
   </style>
   </head>
   <body>
-  <div class="wrapper">
+  <div class="wrapper" style="border-top:1px #E5E8ED solid ;">
     <div class="content">
   <button id="accordion_main_but" onclick="MainAcc()">Часто задаваемые вопросы</button>
   <div id="accordion_main">
