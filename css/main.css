@@ -10,74 +10,7 @@
 -------------------------------------------------------------------------------*/
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
-/* Указываем box sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
 
 
 
@@ -2125,7 +2058,7 @@ color: #000000;
     display: none; }
     @media all and (max-width: 760px) {
       .cart-options__title-mobile {
-        display: block;
+        display: none;
         font-family: 'Proxima Nova Semibold', sans-serif;
         font-size: 24px;
         text-transform: uppercase;
@@ -4431,6 +4364,10 @@ border-top:1px #E5E8ED solid;
   .color_popup{
     width: 100vw;
   }
+  .color_popup_close{
+    top: 25px;
+    right: 25px;
+  }
   .list_item_modal{
     overflow-x: scroll;
     display: -webkit-box;
@@ -4474,10 +4411,10 @@ border-top:1px #E5E8ED solid;
  }
  @media screen and (max-width:720px) {
   .box_contact_head{
-    width: 70%;
+    width: 90%;
   }
   .box_contact_head_bot{
-    width: 70%;
+    width: 90%;
   }
  }
  @media screen and (max-width:662px){
@@ -4532,5 +4469,8 @@ border-top:1px #E5E8ED solid;
  @media screen and (max-width:760px){
   .accordion{
     font-size: 15px !important;
+  }
+  #accordion_main_but{
+    font-size: 14px !important;
   }
  }
