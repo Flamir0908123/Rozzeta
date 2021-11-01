@@ -10,6 +10,83 @@
 -------------------------------------------------------------------------------*/
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+
+
+
+
+
+
 html, body, body div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, dfn, em, img, ins, kbd, q, samp, small, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
   margin: 0;
   padding: 0;
@@ -482,7 +559,7 @@ input[type=number] {
     } }
   @media all and (max-width: 599px) {
     .wrapper_cart-shipping {
-      margin-bottom: 23px; } }
+      margin-bottom: 0; } }
 
 .wrapper_cart-addons {
   background: -o-linear-gradient(335deg, #f7f7f7, #f0faff);
@@ -2747,7 +2824,7 @@ color: #000000;
         padding: 42px 55px 30px 55px; } }
     @media all and (max-width: 599px) {
       .cart-order__block {
-        padding: 15px 0 15px 0;
+        padding: 15px 15px 15px 15px;
         border: none; } }
     .cart-order__block_noborder {
       border: none; }
@@ -4405,6 +4482,9 @@ border-top:1px #E5E8ED solid;
  }
  @media screen and (max-width:662px){
   .box_item_head_last{
+    margin-top: 5px;
+  }
+  .box_item_head{
     margin-top: 11px;
   }
    
@@ -4444,5 +4524,13 @@ border-top:1px #E5E8ED solid;
   }
   .cart-options__item-box-2{
     display: none;
+  }
+  .accordion{
+    font-size: 13px;
+  }
+ }
+ @media screen and (max-width:760px){
+  .accordion{
+    font-size: 15px !important;
   }
  }
