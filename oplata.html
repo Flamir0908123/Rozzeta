@@ -95,51 +95,56 @@
               <div class="cart-order__wrap-2">
                 <div class="cart-order__frame">
                   <div class="cart-order__block">
-                    <p class="cart-order__title-2"><img src="/img/svg/icon_important.svg" alt="" class="svg_cart">Шаг 1. Укажите свои контактные данные:</p>
+                    <p class="cart-order__title-2"><img src="img/svg/icon_important.svg" alt="" class="svg_cart step1svg">Шаг 1. Укажите свои контактные данные:</p>
+                  
                     <div class="cart-order__wrap-5">
                       <div class="cart-order__input-wrap cart-order__input-wrap_w50p  cart-order__input-wrap_side-marg-5">
-                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required id="testName">
+                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required id="oplName" oninput="oplCheck();">
                         <p class="cart-order__placeholder">Имя</p>
                       </div>
                       <div class="cart-order__input-wrap cart-order__input-wrap_w50p  cart-order__input-wrap_side-marg-5">
-                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required>
+                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required id="oplSurName" oninput="oplCheck();">
                         <p class="cart-order__placeholder">Фамилия</p>
                       </div>
                     </div>
                     <div class="cart-order__input-wrap">
-                      <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required>
+                      <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required id="oplPhone" oninput="oplCheck();">
                       <p class="cart-order__placeholder">Номер мобильного телефона</p>
                     </div>
                     <div class="cart-order__input-wrap">
-                      <input type="email" minlength="1" required name="userName"  value="" class="cart-order__input"  required>
+                      <input type="email" minlength="1" required name="userName"  value="" class="cart-order__input"  required id="oplEmail" oninput="oplCheck();">
                       <p class="cart-order__placeholder">Действующая электронная почта</p>
                     </div>
                   </div>
+                 
                   <div class="cart-order__block">
-                    <p class="cart-order__title-2"><img src="/img/svg/safe.svg" alt="" class="svg_cart">Шаг 2. Введите свой адрес:</p>
+                    <p class="cart-order__title-2"><img src="img/svg/safe.svg" alt="" class="svg_cart step2svg">Шаг 2. Введите свой адрес:</p>
+                     <div class="opl_blur step2blur"> 
                       <div class="cart-order__input-wrap">
-                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required>
+                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required id="oplCity" oninput="oplCheck();">
                         <p class="cart-order__placeholder">Введите город, затем выберите его из списка</p>
                       </div>
                     <div class="cart-order__wrap-5">
                       <div class="cart-order__input-wrap cart-order__input-wrap_side-marg-5 cart-order__input-wrap_street">
-                        <input type="text" minlength="1" required="true" name="userName"  value="" class="cart-order__input" required>
+                        <input type="text" minlength="1" required="true" name="userName"  value="" class="cart-order__input" required id="oplStr" oninput="oplCheck();">
                         <p class="cart-order__placeholder">Улица</p>
                       </div>
                       <div class="cart-order__input-wrap cart-order__input-wrap_side-marg-5 cart-order__input-wrap_build">
-                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required="">
+                        <input type="text" minlength="1" required name="userName"  value="" class="cart-order__input" required="" id="oplHouse" oninput="oplCheck();">
                         <p class="cart-order__placeholder">Дом</p>
                       </div>
                       <div class="cart-order__input-wrap cart-order__input-wrap_side-marg-5 cart-order__input-wrap_flat">
-                        <input type="text" minlength="1" name="userName"  value="" class="cart-order__input">
+                        <input type="text" minlength="1" name="userName"  value="" class="cart-order__input" id="oplAps" oninput="oplCheck();">
                         <p class="cart-order__placeholder">Квартира</p>
                       </div>
                     </div>
                   </div>
+                  </div>
                   <div class="cart-order__block cart-order__block_noborder">
-                    <p class="cart-order__title-2"><img src="/img/svg/safe.svg" alt="" class="svg_cart">Шаг 3. Выберите удобный вариант доставки:</p>
+                    <p class="cart-order__title-2"><img src="img/svg/safe.svg" alt="" class="svg_cart step3svg">Шаг 3. Выберите удобный вариант доставки:</p>
+                    <div class="opl_blur step3blur"> 
                     <div class="cart-order__input-wrap">
-                      <select name="date-added" class="cart-order__select"  required>
+                      <select name="date-added" class="cart-order__select"  required onchange="oplCheck();" id="oplDel">
                         <option value="" id="empty-select"></option>
                         <option value="Курьер">Курьер</option>
                         <option value="Самовывоз">Самовывоз</option>
@@ -150,16 +155,23 @@
                     </div>
                   </div>
                 </div>
+                </div>
                 <div class="cart-order__frame cart-order__frame_no-bg" id="order-step-5">
                   <div class="cart-order__block cart-order__block_noborder cart-order__block_pb0">
                     <div class="cart-order__wrap-4">
-                      <p class="cart-order__title-2 cart-order__title-2_mobile-hidden"><img src="/img/svg/safe.svg" alt="" class="svg_cart">Шаг 4. Оплатите заказ:</p>
+                      <p class="cart-order__title-2 cart-order__title-2_mobile-hidden"><img src="img/svg/safe.svg" alt="" class="svg_cart step4svg">Шаг 4. Оплатите заказ:</p>
+                   
                       <p class="cart-order__title-2 cart-order__title-2_mobile-show">Шаг 5. Оплатите заказ:</p>
                       <div><img src="img/cart-payments.png" width="800" height="56" alt="" class="cart-order__payments"></div>
                     </div>
+                      <div class="opl_blur step4blur"> 
                     <button class="cart-order__btn">Купить онлайн</button>
+                    </div>
                   </div>
+
+
                 </div>
+
                 <div class="cart-order__garantiya"><div class="checkbox_box" style="
                     align-items: center; 
                    display: flex;
@@ -225,7 +237,7 @@
                       <td class="cart-stats__right">490 руб.</td>
                     </tr>
                     <tr>
-                      <td class="cart-stats__left cart-stats__left_pb25">У вас есть промокод? <a href="#" class="cart-stats__link" id="promo-link" onclick="$('.cart-stats__promo-row').attr('style', 'display: block')">Введите его здесь <span class="cart-stats__arrow-down">›</span></a></td>
+                      <td class="cart-stats__left cart-stats__left_pb25">У вас есть промокод? <a  class="cart-stats__link" style="cursor: pointer;" id="promo-link" onclick="$('.cart-stats__promo-row').attr('style', 'display: block')">Введите его здесь <span class="cart-stats__arrow-down">›</span></a></td>
                       <td></td>
                     </tr>
                     <tr class="cart-stats__promo-row">
@@ -589,7 +601,7 @@ color: #000000;
       font-size: 12px;
       line-height: 18px;
       color: #000000;
-      ">Разработка сайта: <a href="https://lab-mg.com/" style="font-family: Proxima Nova;
+      ">Разработка сайта: <a href="https://lab-mg.com/" target="_blank"  style="font-family: Proxima Nova;
       font-style: normal;
       font-weight: normal;
       font-size: 12px;
@@ -628,5 +640,6 @@ color: #000000;
           </footer>
         </div>
       </div>
+      <script src="js/oplata.js"></script>
 </body>
 </html>
